@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import { WHATSAPP_URL } from "@/lib/utils";
+import { CONTACT_URL } from "@/lib/utils";
 
 export function CTA() {
   return (
@@ -19,12 +19,10 @@ export function CTA() {
 
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={CONTACT_URL}
             className="group inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-semibold text-primary-foreground shadow-[0_0_0_1px_hsl(4_90%_58%),0_30px_80px_-20px_hsl(4_90%_58%/0.7)] transition hover:brightness-110"
           >
-            Falar com Ives no WhatsApp
+            Falar com o Ives
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
           <a

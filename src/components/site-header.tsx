@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { WHATSAPP_URL } from "@/lib/utils";
+import { CONTACT_URL } from "@/lib/utils";
 
 export function SiteHeader() {
   return (
@@ -30,9 +30,7 @@ export function SiteHeader() {
         </nav>
 
         <a
-          href={WHATSAPP_URL}
-          target="_blank"
-          rel="noopener noreferrer"
+          href={CONTACT_URL}
           className="rounded-full border border-border-strong bg-background-elevated px-4 py-2 text-xs font-semibold tracking-wide text-foreground transition hover:border-primary hover:text-primary"
         >
           Falar com Ives

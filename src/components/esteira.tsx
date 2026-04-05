@@ -1,6 +1,5 @@
 import { Check, Sparkles, Crown, Flame } from "lucide-react";
-import { WHATSAPP_URL } from "@/lib/utils";
-import { cn } from "@/lib/utils";
+import { CONTACT_URL, cn } from "@/lib/utils";
 
 type Tier = {
   id: string;
@@ -211,9 +210,7 @@ function TierCard({ tier }: { tier: Tier }) {
 
       <div className="mt-auto pt-8">
         <a
-          href={WHATSAPP_URL}
-          target="_blank"
-          rel="noopener noreferrer"
+          href={CONTACT_URL}
           className={cn(
             "flex w-full items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition",
             tier.featured

@@ -1,5 +1,5 @@
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-import { WHATSAPP_URL } from "@/lib/utils";
+import { CONTACT_URL } from "@/lib/utils";
 
 export function Hero() {
   return (
@@ -52,12 +52,10 @@ export function Hero() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={CONTACT_URL}
               className="inline-flex items-center gap-2 rounded-full border border-border-strong bg-background-elevated px-6 py-3 text-sm font-semibold text-foreground transition hover:border-primary"
             >
-              Conversar no WhatsApp
+              Falar com o Ives
             </a>
           </div>
 

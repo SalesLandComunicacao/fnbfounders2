@@ -5,8 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export const WHATSAPP_URL =
-  "https://wa.me/5511999999999?text=" +
-  encodeURIComponent(
-    "Olá! Vim pela página FNB Founders e quero falar sobre a mentoria."
-  );
+export const CONTACT_EMAIL = "founders@salesland.com.br";
+export const CONTACT_URL =
+  `mailto:${CONTACT_EMAIL}?subject=` +
+  encodeURIComponent("FNB Founders — quero falar sobre a mentoria");
