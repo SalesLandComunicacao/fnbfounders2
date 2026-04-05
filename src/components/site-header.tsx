@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { CONTACT_URL } from "@/lib/utils";
 
@@ -5,14 +6,20 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <Link href="/" className="flex items-center gap-2.5">
-          <span className="flex h-8 w-8 items-center justify-center rounded-md bg-primary text-primary-foreground font-black text-sm">
-            F
-          </span>
-          <div className="leading-tight">
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/salesland-logo.webp"
+            alt="Salesland"
+            width={120}
+            height={28}
+            priority
+            className="h-7 w-auto"
+          />
+          <span className="hidden h-5 w-px bg-border-strong sm:block" aria-hidden />
+          <div className="hidden leading-tight sm:block">
             <div className="text-sm font-bold tracking-tight">FNB Founders</div>
             <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
-              by Salesland
+              Ecossistema de founders
             </div>
           </div>
         </Link>
