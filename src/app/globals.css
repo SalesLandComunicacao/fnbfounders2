@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  /* FNB brand tokens — dark navy + vivid red primary */
+  --background: hsl(222 47% 6%);
+  --background-elevated: hsl(222 47% 9%);
+  --foreground: hsl(210 40% 98%);
+  --muted: hsl(222 47% 15%);
+  --muted-foreground: hsl(215 20% 65%);
+  --border: hsl(222 30% 16%);
+  --border-strong: hsl(222 30% 24%);
+  --primary: hsl(4 90% 58%);
+  --primary-foreground: hsl(0 0% 100%);
+  --primary-soft: hsl(4 90% 58% / 0.12);
+  --ring: hsl(4 90% 58% / 0.5);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-elevated: var(--background-elevated);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-soft: var(--primary-soft);
+  --color-ring: var(--ring);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html,
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle grid backdrop used behind hero */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, hsl(222 30% 16% / 0.7) 1px, transparent 1px),
+    linear-gradient(to bottom, hsl(222 30% 16% / 0.7) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.bg-radial-primary {
+  background: radial-gradient(
+    ellipse 60% 50% at 50% 0%,
+    hsl(4 90% 58% / 0.22),
+    transparent 70%
+  );
+}
+
+/* Focus ring */
+*:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
